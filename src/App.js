@@ -1,7 +1,7 @@
 import "./App.css";
 import useLocalStorage from "use-local-storage";
-import light_mode from './media/light-mode.png';
-import dark_mode from './media/night-mode.png';
+import light_mode from "./media/light-mode.png";
+import dark_mode from "./media/night-mode.png";
 
 function App() {
   const defaultDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
