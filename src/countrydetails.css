@@ -1,0 +1,47 @@
+.CountryDetail {
+  height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.CountryDetail a {
+  width: fit-content;
+  margin-bottom: 20px;
+  padding: 5px;
+  text-transform: capitalize;
+  text-decoration: none;
+  background: var(--background-secondry);
+  color: var(--text-main);
+}
+
+.CountryDetail .flag {
+    margin-bottom: 50px;
+}
+
+.CountryDetail .flag > img {
+    width: 100%;
+}
+
+.CountryDetail h3 {
+    font-size: 40px;
+}
+
+.CountryDetail ul {
+    height: 50vh;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.CountryDetail ul li {
+    list-style-type: none;
+    color: var(--text-data);
+}
+
+.CountryDetail ul span {
+    text-transform: capitalize;
+    font-weight: 600;
+    color: var(--text-main);
+}

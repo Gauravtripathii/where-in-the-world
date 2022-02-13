@@ -22,7 +22,7 @@ function CountryList() {
         <div>
           {country.map((country, index) => (
             <div key={index} className="card">
-              <Link to="/">
+              <Link to="/country" state={{ from: country }}>
                 <div className="flag">
                   <img src={country.flags.png} alt="flag" />
                 </div>

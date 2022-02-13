@@ -1,10 +1,12 @@
 import "./App.css";
 import "./countrylist.css";
+import './countrydetails.css';
 import useLocalStorage from "use-local-storage";
 import light_mode from "./media/light-mode.png";
 import dark_mode from "./media/night-mode.png";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import CountryList from "./components/CountryList";
+import CountryDetail from "./components/CountryDetail";
 
 function App() {
   const defaultDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
@@ -29,6 +31,7 @@ function App() {
 
         <Routes>
           <Route path="/" element = {<CountryList />}></Route>
+          <Route path="/country" element = {<CountryDetail />}></Route>
         </Routes>
 
       </div>
