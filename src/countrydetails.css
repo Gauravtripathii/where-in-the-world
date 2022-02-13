@@ -1,5 +1,5 @@
 .CountryDetail {
-  height: 100vh;
+  height: calc(100vh-100px);
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -45,4 +45,48 @@
   text-transform: capitalize;
   font-weight: 600;
   color: var(--text-main);
+}
+
+@media only screen and (min-width: 990px) {
+  .CountryDetail {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 85vh;
+  }
+
+  .CountryDetail a {
+    position: absolute;
+  }
+
+  .CountryDetail .flag {
+    margin-bottom: 0;
+    margin-top: 80px;
+    width: 40%;
+    float: left;
+  }
+
+  .CountryDetail > .right {
+      width: 50%;
+      margin-top: 80px;
+  }
+
+  .CountryDetail ul {
+    height: 50vh;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .CountryDetail ul li {
+    list-style-type: none;
+    color: var(--text-data);
+  }
+
+  .CountryDetail ul span {
+    text-transform: capitalize;
+    font-weight: 600;
+    color: var(--text-main);
+  }
 }
