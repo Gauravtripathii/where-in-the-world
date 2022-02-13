@@ -2,6 +2,7 @@ import "./App.css";
 import useLocalStorage from "use-local-storage";
 import light_mode from "./media/light-mode.png";
 import dark_mode from "./media/night-mode.png";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 function App() {
   const defaultDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
