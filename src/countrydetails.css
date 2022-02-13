@@ -13,35 +13,36 @@
   text-decoration: none;
   background: var(--background-secondry);
   color: var(--text-main);
+  box-shadow: 0 0 4px black;
 }
 
 .CountryDetail .flag {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .CountryDetail .flag > img {
-    width: 100%;
+  width: 100%;
 }
 
 .CountryDetail h3 {
-    font-size: 40px;
+  font-size: 40px;
 }
 
 .CountryDetail ul {
-    height: 50vh;
-    font-size: 25px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+  height: 50vh;
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .CountryDetail ul li {
-    list-style-type: none;
-    color: var(--text-data);
+  list-style-type: none;
+  color: var(--text-data);
 }
 
 .CountryDetail ul span {
-    text-transform: capitalize;
-    font-weight: 600;
-    color: var(--text-main);
+  text-transform: capitalize;
+  font-weight: 600;
+  color: var(--text-main);
 }
