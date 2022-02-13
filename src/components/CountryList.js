@@ -16,7 +16,6 @@ function CountryList() {
 
   return (
     <div className="CountryList">
-      <nav></nav>
 
       {country && (
         <div>

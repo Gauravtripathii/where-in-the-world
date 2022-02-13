@@ -1,41 +1,95 @@
 .CountryList {
-    padding: 25px;
+  padding: 25px;
 }
 
 .CountryList .card {
-    box-shadow: 0 0 5px black;
-    margin-bottom: 50px;
+  box-shadow: 0 0 5px black;
+  margin-bottom: 50px;
 }
 
 .CountryList .card a {
-    text-decoration: none;
-    color: var(--text-main);
+  text-decoration: none;
+  color: var(--text-main);
+}
+
+.CountryList .card .flag {
+    height: 60%;
 }
 
 .CountryList .card .flag > img {
-    width: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .CountryList .card .details {
-    padding: 15px;
+  padding: 15px;
 }
 
 .CountryList .card .details > .title {
-    font-weight: 600;
-    font-size: 20px;
+  font-weight: 600;
+  font-size: 20px;
 }
 
 .CountryList .card .details ul {
-    margin-top: 15px;
+  margin-top: 15px;
 }
 
 .CountryList .card .details ul > li {
-    list-style-type: none;
-    text-transform: capitalize;
-    color: var(--text-data);
+  list-style-type: none;
+  text-transform: capitalize;
+  color: var(--text-data);
 }
 
 .CountryList .card .details ul li > span {
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+@media only screen and (min-width: 990px) {
+  .CountryList {
+    padding: 30px;
+  }
+
+  .CountryList > div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+
+  .CountryList .card {
+    margin: 0;
+  }
+
+  .CountryList .card a {
+    text-decoration: none;
+    color: var(--text-main);
+  }
+
+  .CountryList .card .flag > img {
+    width: 100%;
+  }
+
+  .CountryList .card .details {
+    padding: 15px;
+  }
+
+  .CountryList .card .details > .title {
+    font-weight: 600;
+    font-size: 20px;
+  }
+
+  .CountryList .card .details ul {
+    margin-top: 15px;
+  }
+
+  .CountryList .card .details ul > li {
+    list-style-type: none;
+    text-transform: capitalize;
+    color: var(--text-data);
+  }
+
+  .CountryList .card .details ul li > span {
     font-weight: 600;
     color: var(--text-main);
+  }
 }
